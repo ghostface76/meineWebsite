@@ -1,0 +1,9 @@
+diff a/_sass/style1.scss b/_sass/style1.scss	(rejected hunks)
+@@ -27,6 +27,7 @@
+   }
+ }
+ 
++.gf_active {
+   background: #f60;
+ }
+ 
