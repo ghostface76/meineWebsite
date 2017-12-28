@@ -8,32 +8,11 @@
   </head>
   <body>
     <header>
-      <figure id="gf_burger">
-        <img src="..\_images\burger.svg" height="50px" width="50px" alt="">
+      <?php 
+      
+       include('../_include/nav.php');
 
-      </figure>
-      <h1>Meine Lernseite</h1>
-
-      <nav>
-        <ul>
-          <li>
-            <a href="..\index.html">Home</a>
-          </li>
-          <li>
-            <a href="#">HTML5</a>
-          </li>
-          <li>
-            <a href="#">CSS3</a>
-          </li>
-          <li>
-            <a href="..\_pages\javascript.html">JavaScript</a>
-          </li>
-          <li>
-            <a href="#">PHP</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      ?>
     <main>
       <section>
         <article class="">

@@ -2,35 +2,76 @@
 $hintergrundfarbe: #2C2C29;
 $Raender: #1f1f1d;
 $helleSchrift: #fff;
-body,
-html {
+$blau: #008CED;
+* {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(138, 109, 236);
 }
 
-header {
+// **********************************************************
+// *****                                                *****
+// *****Todos:                                          *****
+// **********************************************************
+// TODO: größen in em ändern
+// TODO: viewports anlegen
 
-  figure {
+
+body,
+html {
+
+  width: 100%;
+  height: 100%;
+  }
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 30vh;
+  background:url(/projekte/lernseite/_bilder/header.jpg) center center/cover;
+
+  >h1 {
+    padding: 0 auto;
+  }
+  >figure {
     display: block;
     position: absolute;
+    
     top: 0;
     right: 0;
+    >img {
+      width: 5em;
+      height: 5em;
+    }
   }
 
   nav {
     display: inline-block;
     transition: all 500ms ease;
     background: $hintergrundfarbe;
-    width: auto;
+    // width: auto;
     position: absolute;
-    top: 0;
+    top: 0.1em;
     left: -100vw;
     ul {
       margin: 0;
       padding: 0;
+      li:first-of-type {
+        background: $blau;
+        height: 12em;
+        img{
+          display: block;
+          float: left;
+          height: 5em;
+          width: 5em;
+          padding: 3.5em 2em 3.5em 2em;
+          }
+        >p {
+          padding: 1.5em 0;
+          font-size: 3em;
+        }  
+          
+      }
       li {
         padding: 9px 30px;
         text-align: center;
@@ -38,8 +79,9 @@ header {
         border-bottom: 1px solid $Raender;
         color: $helleSchrift;
         a {
-          // margin: 20px 30px;
-          font-size: 32px;
+          // padding: 100%;
+          display: block;
+          font-size: 6em;
           width: 100%;
           text-align: center;
           text-decoration: none;
@@ -89,3 +131,21 @@ section {
     cursor: pointer;
   }
 }
+
+/* Ansicht für Tablets */
+
+@media screen and (min-width:38.75em){
+  figure {
+    visibility: hidden;
+  }
+
+  nav {
+    display: inline;
+    left: 0;
+  }
+
+}
+
+  /* Ansicht für Desktop-Monitore */
+
+@media screen and (min-width:45em) {}

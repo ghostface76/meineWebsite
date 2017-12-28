@@ -1,40 +1,65 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
 body,
 html {
-  margin: 0;
-  padding: 0;
   width: 100%;
-  height: 100%;
-  background: #8a6dec; }
+  height: 100%; }
 
-header figure {
-  display: block;
-  position: absolute;
+header {
+  position: relative;
   top: 0;
-  right: 0; }
-header nav {
-  display: inline-block;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-  background: #2C2C29;
-  width: auto;
-  position: absolute;
-  top: 0;
-  left: -100vw; }
-  header nav ul {
-    margin: 0;
-    padding: 0; }
-    header nav ul li {
-      padding: 9px 30px;
-      text-align: center;
-      list-style-type: none;
-      border-bottom: 1px solid #1f1f1d;
-      color: #fff; }
-      header nav ul li a {
-        font-size: 32px;
-        width: 100%;
+  width: 100%;
+  height: 30vh;
+  background: url(/projekte/lernseite/_bilder/header.jpg) center center/cover; }
+  header > h1 {
+    padding: 0 auto; }
+  header > figure {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    header > figure > img {
+      width: 5em;
+      height: 5em; }
+  header nav {
+    display: inline-block;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background: #2C2C29;
+    position: absolute;
+    top: 0.1em;
+    left: -100vw; }
+    header nav ul {
+      margin: 0;
+      padding: 0; }
+      header nav ul li:first-of-type {
+        background: #008CED;
+        height: 12em; }
+        header nav ul li:first-of-type img {
+          display: block;
+          float: left;
+          height: 5em;
+          width: 5em;
+          padding: 3.5em 2em 3.5em 2em; }
+        header nav ul li:first-of-type > p {
+          padding: 1.5em 0;
+          font-size: 3em; }
+      header nav ul li {
+        padding: 9px 30px;
         text-align: center;
-        text-decoration: none;
+        list-style-type: none;
+        border-bottom: 1px solid #1f1f1d;
         color: #fff; }
+        header nav ul li a {
+          display: block;
+          font-size: 6em;
+          width: 100%;
+          text-align: center;
+          text-decoration: none;
+          color: #fff; }
 
 nav.gf_active_menu {
   left: 0;
@@ -67,5 +92,15 @@ section {
     font-size: 50px;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer; }
+
+/* Ansicht für Tablets */
+@media screen and (min-width: 38.75em) {
+  figure {
+    visibility: hidden; }
+
+  nav {
+    display: inline;
+    left: 0; } }
+/* Ansicht für Desktop-Monitore */
 
 /*# sourceMappingURL=style1.css.map */
