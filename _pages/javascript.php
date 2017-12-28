@@ -8,26 +8,9 @@
   </head>
   <body>
     <header>
-      <h1>Meine Lernseite</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html">Home</a>
-          </li>
-          <li>
-            <a href="#">HTML5</a>
-          </li>
-          <li>
-            <a href="#">CSS3</a>
-          </li>
-          <li>
-            <a href="#">JavaScript</a>
-          </li>
-          <li>
-            <a href="#">PHP</a>
-          </li>
-        </ul>
-      </nav>
+      <?PHP
+include('../_include/nav.php');
+      ?>
     </header>
     <main>
       <section>
