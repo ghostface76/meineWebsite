@@ -8,21 +8,32 @@
   </head>
   <body>
     <header>
-      <?PHP
+      <?php
 include('../_include/nav.php');
-      ?>
+
+
+?>
     </header>
     <main>
       <section>
-        <h2>JavaScript Events abfangen, Funktionen ansprechen und Elemente suchen</h2>
-        <div class="gf_click_class" id="gf_click_id">
-Hier klicken!
-        </div>
+        <article class="">
+          <h2>Variablen</h2>
+          <p>Eine Variable ist sozusagen ein einfacher Behälter für Daten</p>
+          <p>Variablen definieren: </p><div class="">
+            var Variablenname: Inhalt;
+          </div>
+          <ul>
+            <li>Deklarieren Sie Variablen immer mit var, da Sie sonst globale Variablen erzeugen, die später evtl. ungewollte Konsequenzen nach sich ziehen.</li>
+            <li>
+              Geben Sie Variablen selbsterklärende Namen, damit Sie in ein paar Wochen wieder erkennen können, was diese Variable beinhalten soll.
+            </li>
+            <li>Beachten Sie die Regeln für selbstvergebene Namen.</li>
+          </ul>
+        </article>
       </section>
       <section>
-<div id="gf_button">
-  Tu was Du tun sollst!
-</div>
+        <h2>JavaScript Events abfangen, Funktionen ansprechen und Elemente suchen</h2>
+
       </section>
     </main>
     <footer></footer>

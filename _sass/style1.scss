@@ -8,35 +8,30 @@ $blau: #008CED;
   padding: 0;
 }
 
-// **********************************************************
+//**********************************************************
 // *****                                                *****
 // *****Todos:                                          *****
 // **********************************************************
 // TODO: größen in em ändern
 // TODO: viewports anlegen
-
-
 body,
 html {
-
   width: 100%;
   height: 100%;
-  }
+}
 
 header {
   position: relative;
   top: 0;
   width: 100%;
-  height: 30vh;
-  background:url(/projekte/lernseite/_bilder/header.jpg) center center/cover;
-
+  height: 90px;
+  background: url(/projekte/lernseite/_bilder/header.jpg) center center/cover;
   >h1 {
     padding: 0 auto;
   }
   >figure {
     display: block;
     position: absolute;
-    
     top: 0;
     right: 0;
     >img {
@@ -45,83 +40,129 @@ header {
     }
   }
 
+  // Navigation
   nav {
     display: inline-block;
     transition: all 500ms ease;
-    background: $hintergrundfarbe;
-    // width: auto;
+    background: $hintergrundfarbe; // width: auto;
     position: absolute;
     top: 0.1em;
-    left: -100vw;
-    ul {
+    left: -200vw;
+    >ul {
       margin: 0;
       padding: 0;
-      li:first-of-type {
+      >li:first-of-type {
         background: $blau;
-        height: 12em;
-        img{
+        height: 8em;
+        >img {
           display: block;
           float: left;
-          height: 5em;
-          width: 5em;
-          padding: 3.5em 2em 3.5em 2em;
-          }
+          height: 3em;
+          width: 3em;
+          padding: 2.5em 2em 2.5em 1em;
+        }
         >p {
           padding: 1.5em 0;
-          font-size: 3em;
-        }  
-          
+          font-size: 2em;
+        }
       }
-      li {
+      >li {
         padding: 9px 30px;
         text-align: center;
         list-style-type: none;
         border-bottom: 1px solid $Raender;
         color: $helleSchrift;
-        a {
+        >figure {
+          >img {
+            display: block;
+            width: 1.5em;
+            height: 1.5em;
+            float: left;
+          }
+
+        }
+        >a {
           // padding: 100%;
           display: block;
-          font-size: 6em;
+          font-size: 2em;
           width: 100%;
           text-align: center;
           text-decoration: none;
           color: $helleSchrift;
         }
+        >ul {
+          display: none;
+
+          >li {
+
+            // text-decoration: none;
+            list-style-type: none;
+            // color: $helleSchrift;
+            a {
+              text-decoration: none;
+              color: $helleSchrift;
+            }
+          }
+
+          >li:first-of-type {
+            // padding: 0;
+            background: $hintergrundfarbe;
+          }
+        }
+      }
+      >li:hover {
+        background-color: $Raender;
       }
     }
+
   }
 }
 
 nav.gf_active_menu {
+  transition: all 1s ease;
+  width: 60vw;
   left: 0;
   z-index: 1;
 }
 
+
 section {
   // z-index: 1;
   width: 90%;
-  height: 50vh;
+  // height: 50vh;
   margin: 90px auto;
-  background: rgb(134, 254, 181);
-  position: relative;
-  border: 1px solid black;
+  // background: rgb(134, 254, 181);
+  // position: relative;
+
   transition: all 200ms;
-  div#gf_button {
+  >article {
+    border: 1px solid black;
+  }
+  >div#gf_button {
     padding: 10px 20px;
     font-family: 'Oswald', sans-serif;
     background: #111;
     transition: all 200ms;
     font-size: 20px;
-    color: #fff;
+    color: $helleSchrift;
   }
   .gf_active {
     background: #f60;
   }
-  div {
-    background: #000;
+  >figure {
+    margin: 2em;
+    >img {
+      margin: 1em;
+      // width: 100%;
+      // height: auto;
+      // max-width: 100px;
+    }
+  }
+  >div {
+    background: $blau;
     border: 2px solid #ff6600;
     padding: 20px;
-    color: #fff;
+    color: $helleSchrift;
     // position: absolute;
     // top: 50%;
     // left: 50%;
@@ -130,22 +171,97 @@ section {
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
   }
+  article {
+    margin: 1em 0;
+    >div {
+      margin: 1em 3em;
+      padding: 1em;
+      display: block;
+      background: $hintergrundfarbe;
+      border: 1px solid $Raender;
+      font-size: 1.2em;
+      color: $helleSchrift;
+    }
+  }
 }
+
 
 /* Ansicht für Tablets */
 
-@media screen and (min-width:38.75em){
-  figure {
-    visibility: hidden;
-  }
+// @media screen and (min-width:38.75em){}
 
-  nav {
-    display: inline;
-    left: 0;
-  }
 
+  @media screen and (min-width:38.75em) {
+  header {
+    >figure {
+      visibility: hidden;
+    }
+  }
+  header {
+    position: relative;
+    display: block;
+    >nav {
+      top: 90px;
+      left: 0;
+      width: 100%;
+      >ul {
+        // display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        background: $hintergrundfarbe;
+        >li:first-of-type {
+          display: none;
+          background: $hintergrundfarbe;
+        }
+        >li {
+          transition: all 1s;
+          width: 120px;
+          height: auto;
+          float: left;
+          position: relative;
+          display: block;
+          border-right: 1px solid $Raender;
+          // text-align: center;
+          a {
+            text-align: center;
+            font-size: 1em;
+            letter-spacing: 1px;
+          }
+          >ul {
+            transition: all 1s;
+            width: 100%;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 42px;
+            >li {
+              display: block;
+              position: relative;
+              background: $hintergrundfarbe;
+            }
+            >li:first-of-type {
+              height: auto;
+              display: block;
+              position: relative;
+              background: $hintergrundfarbe;
+            }
+          }
+        }
+        >li:hover {
+          background: $Raender;
+        }
+        >li:hover > ul {
+          background: $hintergrundfarbe;
+          // color: #ff6600;
+          display: block !important;
+          position: absolute;
+        }
+      }
+    }
+  }
 }
 
-  /* Ansicht für Desktop-Monitore */
+
+/* Ansicht für Desktop-Monitore */
 
 @media screen and (min-width:45em) {}

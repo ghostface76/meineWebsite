@@ -1,8 +1,8 @@
 // erst ausführen, wenn die Seite komplett geladen ist
-window.onload = function () {
-
+document.addEventListener('DOMContentLoaded', function () {
+var gf_active_status = true;
   // Variable (gf_element) anlegen mit dem Inhalt aus der ID
-  var gf_active_status = true;
+  
   var gf_element = document.getElementById('gf_click_id');
   var gf_button = document.getElementById('gf_button');
   var gf_menu = document.getElementsByTagName('figure')[0];
@@ -14,6 +14,7 @@ window.onload = function () {
   // alert(gf_button);
   gf_button_func();
 
+    
   function gf_button_func() {
     if (gf_button != null) {
       gf_button.addEventListener('click', gf_button_click, false);
@@ -46,4 +47,4 @@ window.onload = function () {
     }
   }
 
-};
+});

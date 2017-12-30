@@ -20,15 +20,23 @@
     <main>
       <section>
         <article class="">
-          <h2>Reaktionen auf UserInteraktion</h2>
-          <p>Um auf UserInteraktion zu reagieren, benötigt das Element im DOM einen EventHandler. Dazu muss das Element ersteinmal aus dem Dom ermittelt werden. Das geschieht mit:</p>
-            <div class="">
-            document.getElementById(ID)
-          </div>
-        <p>heißt: nimm das gesamte Dokument (document...) und suche das Element mit der Id: ID </p>
+          <h2>Bilder:</h2>
+          <dl class="">
+            <dt>wo</dt>
+            <dd>Inhalt im HTML und Gestaltung im CSS</dd>
+            <dt>größe:</dt>
+            <dd>im HTML festlegen und im CSS width:100%; height: auto </dd>
+
+          </dl>
 
         </article>
+
+        <figure>
+          <img src="\projekte\lernseite\_bilder\thumb\baum_2_w100.jpg" width="100" height="67" alt="Baum mit moos">
+          <img src="\projekte\lernseite\_bilder\thumb\baum_2_w200.jpg" width="200" height="133" alt="Baum mit moos">
+        </figure>
       </section>
+      
       <section>
         <article class="">
           <p data-height="472" data-theme-id="dark" data-slug-hash="eyvqEX" data-default-tab="css,result" data-user="ghostface_hy" data-embed-version="2" data-pen-title="Flexed Column using  a CSS Pseudo-Element" class="codepen">See the Pen <a href="https://codepen.io/ghostface_hy/pen/eyvqEX/">Flexed Column using  a CSS Pseudo-Element</a> by ghost (<a href="https://codepen.io/ghostface_hy">@ghostface_hy</a>) on <a href="https://codepen.io">CodePen</a>.</p>

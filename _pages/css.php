@@ -20,12 +20,18 @@
     <main>
       <section>
         <article class="">
-          <h2>Reaktionen auf UserInteraktion</h2>
-          <p>Um auf UserInteraktion zu reagieren, benötigt das Element im DOM einen EventHandler. Dazu muss das Element ersteinmal aus dem Dom ermittelt werden. Das geschieht mit:</p>
-            <div class="">
-            document.getElementById(ID)
-          </div>
-        <p>heißt: nimm das gesamte Dokument (document...) und suche das Element mit der Id: ID </p>
+          <h2>box-modell</h2>
+          <p>inline: kein Zeilenumbruch (img,)</p>
+        </article>
+        <article class="">
+          <h2>Bilder:</h2>
+          <dl class="">
+            <dt>wo</dt>
+            <dd>Inhalt im HTML und Gestaltung im CSS</dd>
+            <dt>größe:</dt>
+            <dd>im HTML festlegen und im CSS width:100%; height: auto </dd>
+
+          </dl>
 
         </article>
       </section>
