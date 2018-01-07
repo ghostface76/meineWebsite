@@ -31,7 +31,7 @@
               <a href="/projekte/lernseite/_pages/js_menu.php">testseite</a>
             </li>
             <li>
-              <a href="/projekte/lernseite/_pages/js_menu.php">testseite</a>
+              <a href="/projekte/lernseite/_pages/ajax.php">AJAX</a>
             </li>
             <li>
               <a href="/projekte/lernseite/_pages/js_menu.php">testseite</a>

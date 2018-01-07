@@ -1,0 +1,9 @@
+diff a/_js/script.js b/_js/script.js	(rejected hunks)
+@@ -14,6 +14,7 @@
+   // alert(gf_button);
+   gf_button_func();
+ 
++    
+   function gf_button_func() {
+     if (gf_button != null) {
+       gf_button.addEventListener('click', gf_button_click, false);

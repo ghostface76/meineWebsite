@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Meine Lernseite</title>
     <link rel="stylesheet" href="../_css/style1.css">
+    <script src="../_js/functions.js" charset="utf-8"></script>
     <script src="../_js/script.js" charset="utf-8"></script>
   </head>
   <body>

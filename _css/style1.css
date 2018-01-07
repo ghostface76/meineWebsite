@@ -1,185 +1,64 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0; }
+/**************************
+** ----- allgemein ----- **
+**************************/
+* { margin: 0; padding: 0; }
 
-body,
-html {
-  width: 100%;
-  height: 100%; }
+body, html { width: 100%; height: 100%; }
 
-header {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 90px;
-  background: url(/projekte/lernseite/_bilder/header.jpg) center center/cover; }
-  header > h1 {
-    padding: 0 auto; }
-  header > figure {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0; }
-    header > figure > img {
-      width: 5em;
-      height: 5em; }
-  header nav {
-    display: inline-block;
-    -webkit-transition: all 500ms ease;
-    transition: all 500ms ease;
-    background: #2C2C29;
-    position: absolute;
-    top: 0.1em;
-    left: -200vw; }
-    header nav > ul {
-      margin: 0;
-      padding: 0; }
-      header nav > ul > li:first-of-type {
-        background: #008CED;
-        height: 8em; }
-        header nav > ul > li:first-of-type > img {
-          display: block;
-          float: left;
-          height: 3em;
-          width: 3em;
-          padding: 2.5em 2em 2.5em 1em; }
-        header nav > ul > li:first-of-type > p {
-          padding: 1.5em 0;
-          font-size: 2em; }
-      header nav > ul > li {
-        padding: 9px 30px;
-        text-align: center;
-        list-style-type: none;
-        border-bottom: 1px solid #1f1f1d;
-        color: #fff; }
-        header nav > ul > li > figure > img {
-          display: block;
-          width: 1.5em;
-          height: 1.5em;
-          float: left; }
-        header nav > ul > li > a {
-          display: block;
-          font-size: 2em;
-          width: 100%;
-          text-align: center;
-          text-decoration: none;
-          color: #fff; }
-        header nav > ul > li > ul {
-          display: none; }
-          header nav > ul > li > ul > li {
-            list-style-type: none; }
-            header nav > ul > li > ul > li a {
-              text-decoration: none;
-              color: #fff; }
-          header nav > ul > li > ul > li:first-of-type {
-            background: #2C2C29; }
-      header nav > ul > li:hover {
-        background-color: #1f1f1d; }
+/**************************
+** -----   Header  ----- **
+**************************/
+header { position: relative; top: 0; width: 100%; height: 90px; background: url(/projekte/lernseite/_bilder/header.jpg) center center/cover; /**************************
+** ----- Navigation ---- **
+**************************/ }
+header > h1 { padding: 0 auto; }
+header > figure { display: block; position: absolute; top: 0; right: 0; }
+header > figure > img { width: 5em; height: 5em; }
+header nav { display: inline-block; -webkit-transition: all 500ms ease; transition: all 500ms ease; background: #2C2C29; position: absolute; top: 0.1em; left: -200vw; }
+header nav > ul { margin: 0; padding: 0; }
+header nav > ul > li:first-of-type { background: #008CED; height: 8em; }
+header nav > ul > li:first-of-type > img { display: block; float: left; height: 3em; width: 3em; padding: 2.5em 2em 2.5em 1em; }
+header nav > ul > li:first-of-type > p { padding: 1.5em 0; font-size: 2em; }
+header nav > ul > li { padding: 9px 30px; text-align: center; list-style-type: none; border-bottom: 1px solid #1f1f1d; color: #fff; }
+header nav > ul > li > figure > img { display: block; width: 1.5em; height: 1.5em; float: left; }
+header nav > ul > li > a { display: block; font-size: 2em; width: 100%; text-align: center; text-decoration: none; color: #fff; }
+header nav > ul > li > ul { display: none; }
+header nav > ul > li > ul > li { list-style-type: none; }
+header nav > ul > li > ul > li a { text-decoration: none; color: #fff; }
+header nav > ul > li > ul > li:first-of-type { background: #2C2C29; }
+header nav > ul > li:hover { background-color: #1f1f1d; }
 
-nav.gf_active_menu {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  width: 60vw;
-  left: 0;
-  z-index: 1; }
+nav.gf_active_menu { -webkit-transition: all 1s ease; transition: all 1s ease; width: 60vw; left: 0; z-index: 1; }
 
-section {
-  width: 90%;
-  margin: 90px auto;
-  -webkit-transition: all 200ms;
-  transition: all 200ms; }
-  section > article {
-    border: 1px solid black; }
-  section > div#gf_button {
-    padding: 10px 20px;
-    font-family: 'Oswald', sans-serif;
-    background: #111;
-    -webkit-transition: all 200ms;
-    transition: all 200ms;
-    font-size: 20px;
-    color: #fff; }
-  section .gf_active {
-    background: #f60; }
-  section > figure {
-    margin: 2em; }
-    section > figure > img {
-      margin: 1em; }
-  section > div {
-    background: #008CED;
-    border: 2px solid #ff6600;
-    padding: 20px;
-    color: #fff;
-    font-size: 50px;
-    font-family: 'Open Sans', sans-serif;
-    cursor: pointer; }
-  section article {
-    margin: 1em 0; }
-    section article > div {
-      margin: 1em 3em;
-      padding: 1em;
-      display: block;
-      background: #2C2C29;
-      border: 1px solid #1f1f1d;
-      font-size: 1.2em;
-      color: #fff; }
+/***************************
+** -----   Content   ---- **
+***************************/
+section { width: 90%; margin: 90px auto; -webkit-transition: all 200ms; transition: all 200ms; }
+section > article { border: 1px solid black; }
+section > article ul li { list-style: none; }
+section > article ul li > h4 { margin-top: 1em; }
+section > article ul li div p#gf_bsp01 { display: inline; }
+section > article ul li div button { width: 10em; height: 4em; border-radius: 0.5em; margin: 2em; cursor: pointer; background: #2C2C29; color: #fff; }
+section > figure { margin: 2em; }
+section > figure > img { margin: 1em; }
+section > div { background: #008CED; border: 2px solid #ff6600; padding: 20px; color: #fff; font-size: 50px; font-family: 'Open Sans', sans-serif; cursor: pointer; }
+section article { margin: 1em 0; }
+section article > div { margin: 1em 3em; padding: 1em; display: block; background: #2C2C29; border: 1px solid #1f1f1d; font-size: 1.2em; color: #fff; }
 
 /* Ansicht für Tablets */
-@media screen and (min-width: 38.75em) {
-  header > figure {
-    visibility: hidden; }
-
-  header {
-    position: relative;
-    display: block; }
-    header > nav {
-      top: 90px;
-      left: 0;
-      width: 100%; }
-      header > nav > ul {
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        background: #2C2C29; }
-        header > nav > ul > li:first-of-type {
-          display: none;
-          background: #2C2C29; }
-        header > nav > ul > li {
-          -webkit-transition: all 1s;
-          transition: all 1s;
-          width: 120px;
-          height: auto;
-          float: left;
-          position: relative;
-          display: block;
-          border-right: 1px solid #1f1f1d; }
-          header > nav > ul > li a {
-            text-align: center;
-            font-size: 1em;
-            letter-spacing: 1px; }
-          header > nav > ul > li > ul {
-            -webkit-transition: all 1s;
-            transition: all 1s;
-            width: 100%;
-            display: none;
-            position: absolute;
-            left: 0;
-            top: 42px; }
-            header > nav > ul > li > ul > li {
-              display: block;
-              position: relative;
-              background: #2C2C29; }
-            header > nav > ul > li > ul > li:first-of-type {
-              height: auto;
-              display: block;
-              position: relative;
-              background: #2C2C29; }
-        header > nav > ul > li:hover {
-          background: #1f1f1d; }
-        header > nav > ul > li:hover > ul {
-          background: #2C2C29;
-          display: block !important;
-          position: absolute; } }
+@media screen and (min-width: 38.75em) { header > figure { visibility: hidden; }
+  header { position: relative; display: block; }
+  header > nav { top: 90px; left: 0; width: 100%; }
+  header > nav > ul { text-align: center; background: #2C2C29; }
+  header > nav > ul > li:first-of-type { display: none; background: #2C2C29; }
+  header > nav > ul > li { margin: 0; padding: 0; -webkit-transition: 300ms; transition: 300ms; width: 120px; height: auto; position: relative; display: inline-block; border-right: 1px solid #1f1f1d; text-align: center; }
+  header > nav > ul > li > a { padding: 10px 25px; display: block; text-align: center; font-size: 1em; letter-spacing: 1px; }
+  header > nav > ul > li > ul { -webkit-transition: all 1s; transition: all 1s; width: 100%; display: none; position: absolute; left: 0; top: 42px; }
+  header > nav > ul > li > ul > li { display: block; position: relative; background: #2C2C29; }
+  header > nav > ul > li > ul > li:first-of-type { height: auto; display: block; position: relative; background: #2C2C29; }
+  header > nav > ul > li:hover { background: #1f1f1d; }
+  header > nav > ul > li:hover > ul { background: #2C2C29; display: block !important; position: absolute; } }
 /* Ansicht für Desktop-Monitore */
 
 /*# sourceMappingURL=style1.css.map */
